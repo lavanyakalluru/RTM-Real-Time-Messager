@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy jar file into container
 COPY target/*.jar app.jar
 # Expose port (Spring Boot default)
-EXPOSE 8086
+EXPOSE 8084
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]

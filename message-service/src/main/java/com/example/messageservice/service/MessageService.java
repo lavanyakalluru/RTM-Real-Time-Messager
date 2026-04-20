@@ -9,6 +9,6 @@ public interface MessageService {
 
     MessageResponseDTO sendMessage(MessageRequestDTO request);
 
-    List<MessageResponseDTO> getMessages(String chatId);
+    List<MessageResponseDTO> getConversation(String user1,String user2);
 
 }

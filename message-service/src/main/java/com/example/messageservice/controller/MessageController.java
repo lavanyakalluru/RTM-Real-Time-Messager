@@ -23,10 +23,11 @@ public class MessageController {
         return messageService.sendMessage(request);
     }
 
-    @GetMapping("/chat/{chatId}")
-    public List<MessageResponseDTO> getMessages(
-            @PathVariable String chatId) {
+    @GetMapping("/conversation")
+    public List<MessageResponseDTO> getConversation(
+            @RequestParam String user1,
+            @RequestParam String user2) {
 
-        return messageService.getMessages(chatId);
+        return messageService.getConversation(user1, user2);
     }
 }

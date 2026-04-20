@@ -9,7 +9,6 @@ import lombok.*;
 @Builder
 public class MessageRequestDTO {
 
-    private String chatId;
     private String senderId;
     private String receiverId;
     private String content;
